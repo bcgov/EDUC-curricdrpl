@@ -1,1 +1,5 @@
+#Ignore Settings File
 settings.php
+
+#Ignore Folders
+core/
