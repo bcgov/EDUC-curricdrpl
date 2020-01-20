@@ -1,5 +1,6 @@
 #Ignore Settings File
 settings.php
+code-workspace.code-workspace
 
 #Ignore Folders
 /core
