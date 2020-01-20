@@ -2,4 +2,6 @@
 settings.php
 
 #Ignore Folders
-core/
+/core
+
+#Other ignores
