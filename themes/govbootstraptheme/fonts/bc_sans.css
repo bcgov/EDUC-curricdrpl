@@ -1,0 +1,19 @@
+h1, h2, h1 a, h2 a {
+    font-family: 'BC Sans', Calibri, Arial, 'sans serif'
+}
+h1, h1 a {
+	font-weight: 700;
+    }
+h2, h2 a {
+	font-weight: 700;
+    }
+h3, h4, h5, h6, h3 a {
+    font-family: 'BC Sans', Calibri, Arial, 'sans serif'
+}
+h3, h3 a {
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    }
+body, p, a, li {
+    font-family: 'BC Sans', Calibri, Arial, 'sans serif'
