@@ -1,13 +1,13 @@
-name: Curriculum Gov.bc.ca Subtheme
+name: Curriculum 2 Subtheme
 type: theme
-description: 'Custome Theme for CUrriculum Based on Gov.bc.ca SubTheme.'
+description: 'SubTheme for the Curriculum Site'
 # version: VERSION
 # core: 8.x
 base theme: govdrupal
 
 libraries:
-  - govdrupal/bootstrap_cdn
-  - govdrupal/global-styling
+  - curriculum2/bootstrap_cdn
+  - curriculum2/global-styling
 
 regions:
   top_header: 'Top Header'
@@ -36,5 +36,5 @@ regions:
 # Information added by Drupal.org packaging script on 2019-02-28
 version: '8.x-4.22'
 core: '8.x'
-project: 'bootstrap_barrio'
+project: 'govdrupal'
 datestamp: 1551325396

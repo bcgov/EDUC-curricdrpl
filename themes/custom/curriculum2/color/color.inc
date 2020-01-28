@@ -115,7 +115,7 @@ $info = [
   ],
 
   // Preview files.
-  'preview_library' => 'curriculum/color.preview',
+  'preview_library' => 'curriculum2/color.preview',
   'preview_html' => 'color/preview.html',
 
   // Attachments.

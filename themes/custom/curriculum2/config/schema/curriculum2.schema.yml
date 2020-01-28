@@ -1,8 +1,8 @@
 # Schema for the configuration files of the Bootstrap Barrio Subtheme.
 
-curriculum.settings:
+bootstrap_barrio_subtheme.settings:
   type: theme_settings
-  label: 'Curriculum Subtheme settings'
+  label: 'Curriculum SubTheme Settings'
   mapping:
     bootstrap_barrio_sidebar_position:
       type: text

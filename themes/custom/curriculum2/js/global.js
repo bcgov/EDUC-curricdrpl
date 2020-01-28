@@ -7,7 +7,7 @@
 
   'use strict';
 
-  Drupal.behaviors.curriculum = {
+  Drupal.behaviors.curriculum2 = {
     attach: function (context, settings) {
 
     }
