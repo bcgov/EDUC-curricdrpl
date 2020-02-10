@@ -37,8 +37,6 @@
     float:left;
     padding:10px;
     border-bottom: 1px solid #ccc;
-
-
 }
 
 /* Curriculum  Title*/
@@ -81,7 +79,7 @@
 .curriculum-content > .views-row{
     position: relative;
     padding-left: 30px;
-    background: url(/sites/curriculum.dd/files/images/icons/c_and_c_bullet_black_75.png) no-repeat !important;
+    background: url(/themes/custom/curriculum/images/icons/c_and_c_bullet_black_75.png) no-repeat !important;
     margin-bottom: 10px;
 }
 .curriculum-content > .views-row.ccg_keyword_w_elaboration{
