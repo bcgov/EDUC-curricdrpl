@@ -1,0 +1,42 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+{% if title|render|striptags|trim == 'Curricular Competency' or title|render|striptags|trim == 'Compétences disciplinaires' %}
+<div class="col-6 curriculum_competencies">
+{% elseif title|render|striptags|trim == 'Content' or title|render|striptags|trim == 'Contenu' %}
+<div class="col-6 curriculum_content">
+{% elseif title|render|striptags|trim == 'Big Ideas' or title|render|striptags|trim == 'Grandes idées' %}
+<div class="col-12 curriculum_big_ideas">
+{% else %}
+<div class="col-12">
+{% endif %}
+{% if title %}
+  <h4>{{ title|render|striptags|trim }}</h4>
+{% endif %}
+<div class="curriculum-content">
+{% for row in rows %}
+  {%
+    set row_classes = [
+      default_row_class ? 'views-row',
+    ]
+  %}
+  <div{{ row.attributes.addClass(row_classes) }}>
+    {{ row.content }}
+  </div>
+{% endfor %}
+</div>
+</div>
