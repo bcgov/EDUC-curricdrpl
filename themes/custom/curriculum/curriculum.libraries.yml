@@ -2,10 +2,12 @@ global-styling:
   version: VERSION
   js:
     js/global.js: {}
+    js/curriculum.js: {}
   css:
     component:
       css/style.css: {}
       css/colors.css: {}
+      css/curriculum.css: {}
 bootstrap:
   js:
     /libraries/popper/popper.min.js: {}

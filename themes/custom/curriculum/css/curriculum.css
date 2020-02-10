@@ -1,0 +1,124 @@
+
+/* Grade Picker*/
+.views-field-field-grade-picker{
+    text-align:center;
+}
+.view-display-id-attachment_1{
+    float:left !important;
+}
+
+.view-display-id-attachment_2,.view-display-id-attachment_3{
+    float:left;
+    width:100%;
+
+}
+
+.view-display-id-attachment_3 .view-grouping{
+    width: 100% !important;
+}
+
+.view-display-id-attachment_3 .curriculum-content .views-row{
+    background: none !important;
+}
+
+/* Download Links*/
+
+.downloads{
+    float:right;
+
+}
+.dropdown-menu{
+    float:left;
+    width: 200px;
+
+}
+.dropdown-menu a{
+    width: 200px;
+    float:left;
+    padding:10px;
+    border-bottom: 1px solid #ccc;
+
+
+}
+
+/* Curriculum  Title*/
+
+.view-display-id-attachment_1{
+    float:left;
+    width: 100%;
+    text-align:center;
+
+}
+.view-display-id-attachment_1 .view-grouping{ 
+    width: 100% !important;
+}
+.curriculum-title{
+    text-align: center;
+}
+.curriculum-content > .views-row .elaboration{
+    display: none;
+}
+/* Big Ideas*/
+.curriculum_big_ideas .curriculum-content{
+    display:flex;
+    width:100%;
+}
+.curriculum_big_ideas .curriculum-content .views-row{
+    width:25%;
+    padding:20px;
+    background: none !important;
+}
+/* Content */
+.view-grouping-header{
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+.curriculum-content > .views-row{
+    position: relative;
+    padding-left: 30px;
+    background: url(/sites/curriculum.dd/files/images/icons/c_and_c_bullet_black_75.png) no-repeat !important;
+    margin-bottom: 10px;
+}
+.curriculum-content > .views-row.ccg_keyword_w_elaboration{
+    position: relative;
+    padding-left: 0px !important;
+    background: none !important;
+}
+
+/* Curricular Competencies */
+
+h4.ccg{
+    padding: 25px 0px
+}
+
+.curriculum-content > .views-row .field-content.col{
+    padding-left: 0px !important;
+}
+.view-grouping:nth-of-type(1) {
+    order: 1;
+}
+.view-grouping:nth-of-type(2) {
+    order: 3;
+}
+.view-grouping:nth-of-type(3) {
+    order: 2;
+}
+.view-grouping:nth-of-type(4) {
+    order: 4;
+}
+
+/* Stem styles */
+.curriculum-stem {
+    padding:15px;
+}
+/* Elaborations */
+.keywords, .elaborations{
+    display:none;
+}
+
+/* course Directory*/
