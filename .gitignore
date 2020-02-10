@@ -21,6 +21,8 @@ sites/*/services*.yml
 sites/*/files
 sites/*/private
 
+# Ignore contributed Modules
+
 # Ignore SimpleTest multi-site environment.
 sites/simpletest
 .csslintrc
