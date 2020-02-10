@@ -9,6 +9,7 @@ global-styling:
       css/colors.css: {}
       css/curriculum.css: {}
 bootstrap:
+  header: true
   js:
     /libraries/popper/popper.min.js: {}
     /libraries/bootstrap/dist/js/bootstrap.min.js: {}
@@ -16,6 +17,7 @@ bootstrap:
     component:
       /libraries/bootstrap/dist/css/bootstrap.min.css: {}
 bootstrap_cdn:
+  header: true
   js:
     //ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js: {}
     //cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js: {}
