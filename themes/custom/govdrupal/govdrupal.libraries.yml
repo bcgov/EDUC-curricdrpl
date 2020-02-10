@@ -2,10 +2,12 @@ global-styling:
   version: VERSION
   js:
     js/global.js: {}
+    js/bcgov.js: {}
   css:
     component:
       css/style.css: {}
       css/colors.css: {}
+      css/bcgov.css: {}
 bootstrap:
   js:
     /libraries/popper/popper.min.js: {}
