@@ -1,13 +1,13 @@
 name: Curriculum Gov.bc.ca Subtheme
 type: theme
-description: 'Custome Theme for CUrriculum Based on Gov.bc.ca SubTheme.'
+description: 'Custom Theme for Curriculum Based on Gov.bc.ca SubTheme.'
 # version: VERSION
 # core: 8.x
 base theme: govdrupal
 
 libraries:
-  - govdrupal/bootstrap_cdn
-  - govdrupal/global-styling
+  - curriculum/bootstrap_cdn
+  - curriculum/global-styling
 
 regions:
   top_header: 'Top Header'

@@ -38,3 +38,5 @@ robots.txt
 update.php
 web.config
 .gitattributes
+LICENSE.txt
+composer.lock
