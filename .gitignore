@@ -22,6 +22,7 @@ sites/*/files
 sites/*/private
 
 # Ignore contributed Modules
+modules/contrib/*
 
 # Ignore SimpleTest multi-site environment.
 sites/simpletest
