@@ -27,12 +27,12 @@
     float:right;
 
 }
-.dropdown-menu{
+.view-curriculum-course-view .dropdown-menu{
     float:left;
     width: 200px;
 
 }
-.dropdown-menu a{
+.view-curriculum-course-view .dropdown-menu a{
     width: 200px;
     float:left;
     padding:10px;
@@ -120,3 +120,16 @@ h4.ccg{
 }
 
 /* course Directory*/
+
+
+/* Curriculum Mega Menu*/
+
+.megamenu {
+    position: static;
+}
+  
+.megamenu .dropdown-menu {
+    background: none;
+    border: none;
+    width: 100%;
+}
