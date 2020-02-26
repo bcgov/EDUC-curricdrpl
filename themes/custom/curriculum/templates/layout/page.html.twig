@@ -81,45 +81,26 @@
         <img class="img-fluid d-md-none" src="/bootstrap-theme/dist/images/bcid-symbol-rev.svg" width="63" height="44" alt="B.C. Government Logo">
       </a>
       <div class="navbar-brand">
-        Bootstrap Theme
+      {{ page.secondary_menu }}
       </div>
+
     </div>
   </nav>
 </header>
     <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
       {% block head %}
         {% if page.secondary_menu or page.top_header or page.top_header_form %}
-<nav{{ navbar_attributes }}>
-          {% if container_navbar %}
-          <div class="container">
-          {% endif %}
-            {{ page.header }}
-            {% if page.primary_menu or page.header_form %}
-              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-              <div class="collapse navbar-collapse" id="CollapsingNavbar">
-                {{ page.primary_menu }}
-                {% if page.header_form %}
-                  <div class="form-inline navbar-form float-right">
-                    {{ page.header_form }}
-                  </div>
-                {% endif %}
-	          </div>
-            {% endif %}
-            {% if sidebar_collapse %}
-              <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#CollapsingLeft" aria-controls="CollapsingLeft" aria-expanded="false" aria-label="Toggle navigation"></button>
-            {% endif %}
-          {% if container_navbar %}
-          </div>
-          {% endif %}
-        </nav>      
+    
 <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
-  <a href="#" class="navbar-brand font-weight-bold d-block d-lg-none">MegaMenu</a>
+ 
   <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
           <span class="navbar-toggler-icon"></span>
       </button>
   <div id="navbarContent" class="collapse navbar-collapse">
+    
     <ul class="navbar-nav mx-auto">
       <!-- Megamenu-->
+      <li class="nav-item"><a href="/" class="nav-link font-weight-bold text-uppercase">Home</a></li>
       <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase">Curriculum</a>
         <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
           <div class="container">

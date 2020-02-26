@@ -23,26 +23,4 @@ $(document).ready(function(){
     $('.curriculum_content .view-grouping-content').prepend('<div class="curriculum-stem">' + $(".views-field-field-concept-content-stem .field-content").html() + '</div>');
     $(".views-field-field-concept-content-stem .field-content , .views-field-field-curricular-competency-stem .field-content").css("display","none");
 
-    /* Explore Search combine keyword and elaboration */
-    $(".views-field-field-keywords").each(function(){
-        var keywords = $("div ol li", this) ;
-        var elaborations = $(this).next().closest('ol').children('li') ;
-        console.log(keywords);
-        console.log(elaborations);
-
-        //$(this).next().next().next().next().html();
-        /*
-        console.log("keywords : "+keywords);
-        console.log("elaborations : "+elaborations);
-        var arrayCombined = $.map(keywords, function(v, i) {
-            console.log(elaborations[i]);
-          return [v, elaborations[i]];
-        });
-        
-        console.log("Combined: " + arrayCombined);
-        */
-        console.log(" || ");
-    });
-
-
 });
