@@ -70,28 +70,26 @@
 
 <div id="page-wrapper">
   <div id="page">
+  <header>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <!-- Navbar content -->
+    <div class="container">
+      <a class="navbar-brand" href="https://www2.gov.bc.ca">
+
+        <img class="img-fluid d-none d-md-block" src="/bootstrap-theme/dist/images/bcid-logo-rev-en.svg" width="177" height="44" alt="B.C. Government Logo">
+
+        <img class="img-fluid d-md-none" src="/bootstrap-theme/dist/images/bcid-symbol-rev.svg" width="63" height="44" alt="B.C. Government Logo">
+      </a>
+      <div class="navbar-brand">
+        Bootstrap Theme
+      </div>
+    </div>
+  </nav>
+</header>
     <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
       {% block head %}
         {% if page.secondary_menu or page.top_header or page.top_header_form %}
-
-          <nav{{ navbar_top_attributes }}>
-          {% if container_navbar %}
-          <div class="container">
-          {% endif %}
-              {{ page.secondary_menu }}
-              {{ page.top_header }}
-              {% if page.top_header_form %}
-                <div class="form-inline navbar-form float-right">
-                  {{ page.top_header_form }}
-                </div>
-              {% endif %}
-          {% if container_navbar %}
-          </div>
-          {% endif %}
-          </nav>
-        {% endif %}
-        
- <nav{{ navbar_attributes }}>
+<nav{{ navbar_attributes }}>
           {% if container_navbar %}
           <div class="container">
           {% endif %}
@@ -415,6 +413,11 @@
     </ul>
   </div>
 </nav>
+          
+          
+        {% endif %}
+        
+ 
       {% endblock %}
     </header>
     {% if page.highlighted %}
