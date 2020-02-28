@@ -3,7 +3,7 @@ type: theme
 description: 'Custom Theme for Curriculum Based on Gov.bc.ca SubTheme.'
 # version: VERSION
 # core: 8.x
-base theme: govdrupal
+base theme: bootstrap_barrio
 
 libraries:
   - curriculum/bootstrap_cdn
