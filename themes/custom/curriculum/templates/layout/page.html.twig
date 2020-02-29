@@ -73,19 +73,23 @@
   <header>
   <nav class="navbar navbar-expand-lg navbar-dark">
     <!-- Navbar content -->
-    <div class="container">
-      <a class="navbar-brand" href="https://www2.gov.bc.ca">
+    <div class="container">      
+      
+  
+        <a class="navbar-brand" href="#">
+         <img class="d-inline-block align-top" src="/themes/custom/curriculum/logo.svg" width="177" height="44" alt="B.C. Government Logo">
+          <img class="img-fluid d-md-none" src="/themes/custom/curriculum/logo.svg" width="63" height="44" alt="B.C. Government Logo">
+          <span class="align-bottom">BC's Curriculum</span>
+        </a>
+      
+          
 
-        <img class="img-fluid d-none d-md-block" src="/themes/custom/curriculum/logo.svg" width="177" height="44" alt="B.C. Government Logo">
-
-        <img class="img-fluid d-md-none" src="/themes/custom/curriculum/logo.svg" width="63" height="44" alt="B.C. Government Logo">
-      </a>
-      <div class="navbar-brand">
-      {{ page.secondary_menu }}
+      <div class="navbar-nav">
+        {{ page.secondary_menu }}
       </div>
-
     </div>
   </nav>
+  
 </header>
     <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
       {% block head %}

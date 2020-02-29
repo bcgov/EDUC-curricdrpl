@@ -1,3 +1,30 @@
+/* Language Picker */
+
+.language-picker ul {
+    font-size: 0.9rem;
+    height: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.language-picker li {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+.language-picker li a {
+    display: block;
+    padding: 0 10px;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.language-picker li a:hover{
+    text-decoration: underline;
+}
+
 
 /* Grade Picker*/
 .views-field-field-grade-picker{
