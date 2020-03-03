@@ -10,6 +10,7 @@ libraries:
   - curriculum/global-styling
 
 regions:
+  banner_header: 'Banner'
   secondary_menu: 'Secondary menu'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
