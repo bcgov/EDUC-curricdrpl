@@ -81,21 +81,15 @@
           <img class="img-fluid d-md-none" src="/themes/custom/curriculum/logo.svg" width="63" height="44" alt="B.C. Government Logo">
           <span class="align-bottom">BC's Curriculum</span>
         </a>
-      
-          
-
-        <img class="img-fluid d-none d-md-block" src="/themes/custom/curriculum/logo.svg" width="177" height="44" alt="B.C. Government Logo">
-
-        <img class="img-fluid d-md-none" src="/themes/custom/curriculum/logo.svg" width="63" height="44" alt="B.C. Government Logo">
-      </a>
       <div class="navbar-brand">
       {{ page.secondary_menu }}
       </div>
     </div>
   </nav>
-  <div class="nav col-12" >
+</header>
+  <div class="nav navbar-dark bg-secondary-nav" >
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-secondary-nav">
       
         <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
                 <span class="navbar-toggler-icon"></span>
@@ -402,8 +396,8 @@
   </div>
 
 
-</header>
-    <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
+
+  {#  <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
       {% block head %}
         {% if page.secondary_menu or page.top_header or page.top_header_form %}
   
@@ -414,6 +408,7 @@
  
       {% endblock %}
     </header>
+    #}
     {% if page.highlighted %}
       <div class="highlighted">
         <aside class="{{ container }} section clearfix" role="complementary">
