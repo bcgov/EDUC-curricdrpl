@@ -169,3 +169,27 @@ h4.ccg{
     border: none;
     width: 100%;
 }
+
+/* Carousel/Main Header Image */
+
+#carousel .page .background .background-fade {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    background-image: url(/themes/custom/curriculum/images/carousel-bottom-gradient.png);
+}
+
+.carousel-caption {
+    background-color: rgba(0, 51, 102, 0.8);
+    bottom: 450px;
+    max-width: 550px;
+    margin-top: 200px;
+    margin-left: 30px;
+    padding-left: 20px;
+    text-align:left;
+}
