@@ -17,11 +17,11 @@
 #}
 
 {% if title|render|striptags|trim == 'Curricular Competency' or title|render|striptags|trim == 'Compétences disciplinaires' %}
-<div class="col-8 curriculum_competencies">
+<div class="col-md-8 col-xs-12 d-print-block curriculum_competencies">
 {% elseif title|render|striptags|trim == 'Content' or title|render|striptags|trim == 'Contenu' %}
-<div class="col-4 curriculum_content">
+<div class="col-md-4 col-xs-12 d-print-block curriculum_content">
 {% elseif title|render|striptags|trim == 'Curriculum Data' or title|render|striptags|trim == 'Contenu' %}
-<div class="col-12 course_title">
+<div class="col-12 course_title d-print-block">
 {% elseif title|render|striptags|trim == 'Big Ideas' or title|render|striptags|trim == 'Grandes idées' %}
 <div class="col-12 curriculum_big_ideas">
 {% else %}
@@ -30,7 +30,7 @@
 {% if title %}
   <h4 class="ccg {{ title|render|striptags|trim|replace(" ","-")|lower }}">{{ title|render|striptags|trim }}</h4>
 {% endif %}
-<div class="curriculum-content">
+<div class="curriculum-content d-print-block">
 {% for row in rows %}
   {%
     set row_classes = [

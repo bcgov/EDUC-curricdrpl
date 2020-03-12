@@ -16,18 +16,18 @@
  */
 #}
 {% if title|render|striptags|trim == 'Curricular Competency' or title|render|striptags|trim == 'Compétences disciplinaires' %}
-<div class="col-6 curriculum_competencies">
+<div class="col-md-8 col-xs-12 d-print-block curriculum_competencies">
 {% elseif title|render|striptags|trim == 'Content' or title|render|striptags|trim == 'Contenu' %}
-<div class="col-6 curriculum_content">
+<div class="col-md-4 col-xs-12 d-print-block curriculum_content">
 {% elseif title|render|striptags|trim == 'Big Ideas' or title|render|striptags|trim == 'Grandes idées' %}
-<div class="col-12 curriculum_big_ideas">
+<div class="col-12 course_title d-print-block">
 {% else %}
 <div class="col-12">
 {% endif %}
 {% if title %}
-  <h4>{{ title|render|striptags|trim }}</h4>
+  <h3>{{ title|render|striptags|trim }}</h3>
 {% endif %}
-<div class="curriculum-content">
+<div class="curriculum-content d-print-block">
 {% for row in rows %}
   {%
     set row_classes = [
