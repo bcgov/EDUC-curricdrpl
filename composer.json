@@ -24,6 +24,7 @@
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/core-vendor-hardening": "^8.8",
+        "drupal/csv_serialization": "^1.4",
         "drupal/devel": "^2.1",
         "drupal/search_kint": "^1.0"
     },
