@@ -103,7 +103,7 @@
     line-height: 1.2;
     color: inherit;
 }
-.view-curriculum-course-view .curriculum-content > .views-row{
+.curriculum-content > .views-row{
     position: relative;
     padding-left: 30px;
     background: url(/themes/custom/curriculum/images/icons/c_and_c_bullet_black_75.png) no-repeat !important;
@@ -147,16 +147,7 @@ h4.ccg{
 }
 
 /* course Directory*/
-.view-curriculum-directory .curriculum-content > .views-row{
-    padding: .75rem;
-    vertical-align: top;
-    border-top: 1px solid #bdc5cc;
-}
-.view-curriculum-directory .curriculum-content > .views-row:nth-child(2n+1){
 
-    background-color: rgba(0,0,0,0.05);
-
-}
 
 .pdf_url, .docx_url{
     padding-left: 10px;
@@ -196,6 +187,6 @@ h4.ccg{
     max-width: 550px;
     margin-top: 200px;
     margin-left: 30px;
-    padding-left: 20px;
+    padding-left: 25px;
     text-align:left;
 }
