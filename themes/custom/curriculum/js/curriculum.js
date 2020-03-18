@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('.view-display-id-curriculum_course > .view-content .view-grouping:nth-child(1)').addClass("col-12 curriculum_big_ideas");
-    $('.view-display-id-curriculum_course > .view-content .view-grouping:nth-child(2)').addClass("col-5 curriculum_content");
-    $('.view-display-id-curriculum_course > .view-content .view-grouping:nth-child(3)').addClass("col-7 curriculum_competencies");
+    $('.view-display-id-curriculum_course > .view-content .view-grouping:nth-child(2)').addClass("col-12 col-md-5 curriculum_content");
+    $('.view-display-id-curriculum_course > .view-content .view-grouping:nth-child(3)').addClass("col-12 col-md-7 curriculum_competencies");
 
 
     /* curricular Competency Group as an elaboration */
