@@ -31,12 +31,18 @@
     text-align:center;
 }
 
+.curriculum_competencies .view-grouping-content, .curriculum_content .view-grouping-content{
+    border: 1px solid #ccc;
+}
+
 .view-display-id-attachment_2,.view-display-id-attachment_3{
     float:left;
     width:100%;
 
 }
-
+.view-grouping.curriculum_content,.view-grouping.curriculum_competencies, .view-grouping.curriculum_big_ideas{
+    padding-top: 15px;
+}
 .view-display-id-attachment_3 .view-grouping{
     width: 100% !important;
 }
@@ -72,8 +78,10 @@
 .view-display-id-attachment_1 .view-grouping{ 
     width: 100% !important;
 }
-.curriculum-title{
+h1.curriculum-title{
     text-align: left;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
 }
 .course-links{
 
@@ -189,4 +197,11 @@ h4.ccg{
     margin-left: 30px;
     padding-left: 25px;
     text-align:left;
+}
+
+@media (min-width: 576px){
+    .container{
+        width: 100% !important;
+    }
+
 }
