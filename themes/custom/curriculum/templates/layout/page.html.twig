@@ -94,7 +94,9 @@
         <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
                 <span class="navbar-toggler-icon"></span>
             </button>
-        {% include '@curriculum/navigation/secondarynav.html.twig' %}
+            <div class="nav-brand">
+                {{ page.primary_menu}}
+            </div>
       </nav>
     </div>
   </div>
