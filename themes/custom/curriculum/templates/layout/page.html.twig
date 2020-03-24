@@ -132,6 +132,13 @@
       {% endblock %}
     {% endif %}
     <div id="main-wrapper" class="layout-main-wrapper clearfix">
+    {% if page.homepage_slider %}
+      <div class="homepage-slider">
+        <aside class="{{ container }} section clearfix" role="complementary">
+          {{ page.homepage_slider }}
+        </aside>
+      </div>
+    {% endif %}
       {% block content %}
         <div id="main" class="{{ container }}">
           {{ page.breadcrumb }}

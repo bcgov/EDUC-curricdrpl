@@ -53,6 +53,21 @@
 
 /* Download Links*/
 
+.grade-changer .dropdown-menu a{
+    width: auto !important;
+    float: none !important;
+    border-bottom: none !important;
+    height: 20px !important;
+}
+
+.grade-changer .dropdown-item{
+    display:inline !important;    
+}
+
+.grade-changer{
+    position:absolute !important; 
+    right: 0;
+}
 .downloads{
     float:right;
 
@@ -67,6 +82,7 @@
     float:left;
     padding:10px;
     border-bottom: 1px solid #ccc;
+    
 }
 
 /* Curriculum  Title*/
@@ -197,6 +213,10 @@ h4.ccg{
     margin-left: 30px;
     padding-left: 25px;
     text-align:left;
+}
+/* Main Navigation */
+.nav-brand{
+    width: 100%;
 }
 
 @media (min-width: 576px){
