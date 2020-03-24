@@ -9,6 +9,7 @@ global-styling:
       css/bootstrap-theme.min.css: {}
       css/colors.css: {}
       css/curriculum.css: {}
+      css/print.css: {}
 bootstrap:
   header: true
   js:
