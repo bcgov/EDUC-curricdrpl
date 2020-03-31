@@ -225,33 +225,3 @@ h4.ccg{
     }
 
 }
-@media print {
-    .view-content.row{
-        float: left;
-        width: 100%;
-        clear: both;
-    }
-    .view-curriculum-course-view .curriculum_big_ideas .curriculum-content > .views-row{
-        width: 100%;
-    }
-    .breadcrumb{
-        display:none;
-    }
-    .course-links{
-        display:none;
-    }
-    .card-footer{
-        display:none;
-    }
-    .card{
-        width: 100%;
-        float:left;
-    }
-    .course-core-competencies{
-        width:100%;
-    }
-    .course-core-competencies > div{
-        max-width: 33% !important;
-        float:left;
-    }
-}

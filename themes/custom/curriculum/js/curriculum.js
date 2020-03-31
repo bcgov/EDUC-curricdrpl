@@ -24,4 +24,41 @@ $(document).ready(function(){
     $('.curriculum_content .view-grouping-content').prepend('<div class="curriculum-stem">' + $(".views-field-field-concept-content-stem .field-content").html() + '</div>');
     $(".views-field-field-concept-content-stem .field-content , .views-field-field-curricular-competency-stem .field-content").css("display","none");
 
+
+    var availableTags = [
+        "Studio Arts 3D 11",
+        "Studio Arts 2D 11",
+        "Photography 11",
+        "Graphic Arts 11",
+        "Art Studio 11",
+        "Instrumental Music 11",
+        "Contemporary Music 11",
+        "Composition & Production 11",
+        "Choral Music 11",
+        "Theatre Production 11",
+        "Theatre Company 11",
+        "Film & Television 11",
+        "Drama 11",
+        "Directing and Script Development 11",
+        "Dance Technique and Performance 11",
+        "Dance Foundations 11",
+        "Dance Conditioning 11",
+        "Dance Company 11",
+        "Dance Choreography 11",
+        "Musical Theatre 11",
+        "Media Arts 11",
+        "Arts Education 1",
+        "Arts Education 2",
+        "Arts Education 3",
+        "Arts Education 4",
+        "Arts Education 5",
+        "Arts Education 6",
+        "Arts Education 7",
+        "Arts Education 8",
+        "Arts Education 9"
+      ];
+    $( "#tags" ).autocomplete({
+    source: availableTags
+    });
+
 });

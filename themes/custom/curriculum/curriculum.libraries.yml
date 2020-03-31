@@ -3,6 +3,7 @@ global-styling:
   js:
     js/global.js: {}
     js/curriculum.js: {}
+    js/jquery-ui.js: {}
   css:
     component:
       css/style.css: {}
@@ -21,7 +22,9 @@ bootstrap:
 bootstrap_cdn:
   header: true
   js:
+    
     //ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js: {}
+    https://code.jquery.com/ui/1.12.1/jquery-ui.js: {}
     //cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js: {}
     //stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js: {}
   # css:

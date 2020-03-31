@@ -100,6 +100,14 @@
       </nav>
     </div>
   </div>
+
+  {% if page.homepage_feature %}
+      <div class="homepage-feature">
+        <aside class="{{ container }} section clearfix" role="complementary">
+          {{ page.homepage_feature }}
+        </aside>
+      </div>
+    {% endif %}
   <div id="carousel" class="carousel slide" data-ride="carousel">
   <div class="page">
     <div class="background">
@@ -129,7 +137,8 @@
       {% endblock %}
     </header>
     #}
-    
+  
+ 
     {% if page.highlighted %}
       <div class="highlighted">
         <aside class="{{ container }} section clearfix" role="complementary">
