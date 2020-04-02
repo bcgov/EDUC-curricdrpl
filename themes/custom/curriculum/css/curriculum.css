@@ -225,3 +225,38 @@ h4.ccg{
     }
 
 }
+
+
+/* Home page search block */
+
+.home-search-block{
+    width: 100%;
+}
+
+.has-search {
+    background: #000;
+    border-radius: 3px 0 0 3px;
+    margin:15px 0;
+    padding: 15px;
+    opacity: 0.5;
+    width: 100%;
+
+}
+
+.has-search .form-control {
+   
+    width: 100%;
+    padding-left: 2.375rem;
+}
+  
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
