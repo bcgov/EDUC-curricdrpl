@@ -22,43 +22,47 @@ $(document).ready(function(){
 
     $('.curriculum_competencies .view-grouping-content').prepend('<div class="curriculum-stem">' + $(".views-field-field-curricular-competency-stem .field-content").html() + '</div>');
     $('.curriculum_content .view-grouping-content').prepend('<div class="curriculum-stem">' + $(".views-field-field-concept-content-stem .field-content").html() + '</div>');
-    $(".views-field-field-concept-content-stem .field-content , .views-field-field-curricular-competency-stem .field-content").css("display","none");
+    $(".views-field-field-concept-content-stem .field-content , .views-field-field-curricular-competency-stem .field-content").css("display", "none");
 
 
     var availableTags = [
-        "Studio Arts 3D 11",
-        "Studio Arts 2D 11",
-        "Photography 11",
-        "Graphic Arts 11",
-        "Art Studio 11",
-        "Instrumental Music 11",
-        "Contemporary Music 11",
-        "Composition & Production 11",
-        "Choral Music 11",
-        "Theatre Production 11",
-        "Theatre Company 11",
-        "Film & Television 11",
-        "Drama 11",
-        "Directing and Script Development 11",
-        "Dance Technique and Performance 11",
-        "Dance Foundations 11",
-        "Dance Conditioning 11",
-        "Dance Company 11",
-        "Dance Choreography 11",
-        "Musical Theatre 11",
-        "Media Arts 11",
-        "Arts Education 1",
-        "Arts Education 2",
-        "Arts Education 3",
-        "Arts Education 4",
-        "Arts Education 5",
-        "Arts Education 6",
-        "Arts Education 7",
-        "Arts Education 8",
-        "Arts Education 9"
-      ];
+        {label: "Studio Arts 3D 11", value: "/curriculum/arts-education/11/studio-arts-3D"},
+        {label: "Studio Arts 2D 11", value: "/curriculum/arts-education/11/studio-arts-2D"},
+        {label: "Photography 11", value: "/curriculum/arts-education/11/photography"},
+        {label: "Graphic Arts 11", value: "/curriculum/arts-education/11/graphic-arts"},
+        {label: "Art Studio 11", value: "/curriculum/arts-education/11/art-studio"},
+        {label: "Instrumental Music 11", value: "/curriculum/arts-education/11/instrumental-music"},
+        {label: "Contemporary Music 11", value: "/curriculum/arts-education/11/contemporary-music"},
+        {label: "Composition & Production 11", value: "/curriculum/arts-education/11/composition-and-production"},
+        {label: "Choral Music 11", value: "/curriculum/arts-education/11/choral-music"},
+        {label: "Theatre Production 11", value: "www.google.ca"},
+        {label: "Theatre Company 11", value: "www.google.ca"},
+        {label: "Film & Television 11", value: "www.google.ca"},
+        {label: "Drama 11", value: "www.google.ca"},
+        {label: "Directing and Script Development 11", value: "www.google.ca"},
+        {label: "Dance Technique and Performance 11", value: "www.google.ca"},
+        {label: "Dance Foundations 11", value: "www.google.ca"},
+        {label: "Dance Conditioning 11", value: "www.google.ca"},
+        {label: "Dance Company 11", value: "www.google.ca"},
+        {label: "Dance Choreography 11", value: "www.google.ca"},
+        {label: "Musical Theatre 11", value: "www.google.ca"},
+        {label: "Media Arts 11", value: "www.google.ca"},
+        {label: "Arts Education 1", value: "www.google.ca"},
+        {label: "Arts Education 2", value: "www.google.ca"},
+        {label: "Arts Education 3", value: "www.google.ca"},
+        {label: "Arts Education 4", value: "www.google.ca"},
+        {label: "Arts Education 5", value: "www.google.ca"},
+        {label: "Arts Education 6", value: "www.google.ca"},
+        {label: "Arts Education 7", value: "www.google.ca"},
+        {label: "Arts Education 8", value: "www.google.ca"},
+        {label: "Arts Education 9", value: "www.google.ca"}
+    ];
+    console.log(availableTags);
     $( "#tags" ).autocomplete({
-    source: availableTags
+        source: availableTags,
+        select: function( event, ui ) {
+            window.location.href = ui.item.value;
+        }
     });
-
+    console.log("hello");
 });

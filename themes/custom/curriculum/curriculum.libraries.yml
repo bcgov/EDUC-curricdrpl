@@ -3,7 +3,6 @@ global-styling:
   js:
     js/global.js: {}
     js/curriculum.js: {}
-    js/jquery-ui.js: {}
   css:
     component:
       css/style.css: {}

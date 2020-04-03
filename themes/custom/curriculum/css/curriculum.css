@@ -74,11 +74,11 @@
 }
 .view-curriculum-course-view .dropdown-menu{
     float:left;
-    width: 200px;
+    width: 92%;
 
 }
 .view-curriculum-course-view .dropdown-menu a{
-    width: 200px;
+    width: 100%;
     float:left;
     padding:10px;
     border-bottom: 1px solid #ccc;
@@ -213,6 +213,26 @@ h4.ccg{
     margin-left: 30px;
     padding-left: 25px;
     text-align:left;
+}
+
+/* Core Competencies */
+.competency-links .communication a{
+    border-left: 10px solid orange;
+}
+.competency-links .communication a:hover{
+    background: orange !important;
+}
+.competency-links .thinking a{
+    border-left: 10px solid blue;
+}
+.competency-links .thinking a:hover{
+    background: blue !important;
+}
+.competency-links .personal-and-social a:hover{
+    background: green !important;
+}
+.competency-links .personal-and-social a{
+    border-left: 10px solid green;
 }
 /* Main Navigation */
 .nav-brand{
