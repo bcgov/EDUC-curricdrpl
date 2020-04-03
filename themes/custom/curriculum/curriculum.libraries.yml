@@ -39,3 +39,10 @@ color.preview:
   dependencies:
     - color/drupal.color
     - core/jquery
+
+    # Font Awesome
+  fontawesome_5:
+     version: VERSION
+  css:
+    component:
+      //use.fontawesome.com/releases/v5.1.0/css/all.css: {}
