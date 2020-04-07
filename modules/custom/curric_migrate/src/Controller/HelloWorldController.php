@@ -26,7 +26,7 @@ class HelloWorldController {
    */
   $query = \Drupal::entityQuery('node')
   ->condition('status', 1) //published or not
-  ->condition('type', 'curricular_competency_group'); //content type
+  ->condition('type', 'subject'); //content type
         $nids = $query->execute();
         //ksm($nids);
    
