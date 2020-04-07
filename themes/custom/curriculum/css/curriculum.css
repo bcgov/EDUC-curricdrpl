@@ -246,30 +246,48 @@ h4.ccg{
 
 }
 
+/* Main wrapper homepage */
+
+
+#main-wrapper {
+    background: #fff;
+    background-image: url("/themes/custom/curriculum/images/banners/frontpage-classrom-students.jpg");
+    background-repeat: no-repeat;
+}
+
 
 /* Home page search block */
 
 .home-search-block{
+    min-height: 350px;
     width: 100%;
+}
+
+.home-search-block h2 {
+    color: #fff;
 }
 
 .has-search {
-    background: #000;
+    background: rgba(0, 51, 102, 0.5);
     border-radius: 3px 0 0 3px;
     margin:15px 0;
-    padding: 15px;
-    opacity: 0.5;
+    padding: 25px;
     width: 100%;
 
 }
+
 
 .has-search .form-control {
-   
-    width: 100%;
-    padding-left: 2.375rem;
+
+    width: 90%;
+    
 }
   
-.has-search .form-control-feedback {
+.center {
+
+}
+
+/*.has-search .form-control-feedback {
     position: absolute;
     z-index: 2;
     display: block;
@@ -279,4 +297,4 @@ h4.ccg{
     text-align: center;
     pointer-events: none;
     color: #aaa;
-}
+}*/
