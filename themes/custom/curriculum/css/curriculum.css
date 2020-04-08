@@ -249,7 +249,7 @@ h4.ccg{
 /* Main wrapper homepage */
 
 
-#main-wrapper {
+.homepage-feature {
     background: #fff;
     background-image: url("/themes/custom/curriculum/images/banners/frontpage-classrom-students.jpg");
     background-repeat: no-repeat;
