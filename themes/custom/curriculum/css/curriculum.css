@@ -65,11 +65,11 @@
 }
 
 .grade-changer{
-    position:absolute !important; 
-    right: 0;
+
 }
 .downloads{
-    float:right;
+    position:absolute !important; 
+    right: 0;
 
 }
 .view-curriculum-course-view .dropdown-menu{
