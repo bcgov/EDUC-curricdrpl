@@ -42,3 +42,7 @@ function curriculum_preprocess_page(&$variables)
     $variables['#attached']['library'][] = ( $icons == 'fontawesome_5' ? 'YOURTHEME' : 'bootstrap_barrio' ) . '/' . $icons;
   }
 }
+function curriculum_preprocess(&$variables){
+  $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $variables['language'] = $language;
+}

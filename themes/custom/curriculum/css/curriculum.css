@@ -46,10 +46,17 @@
 .view-display-id-attachment_3 .view-grouping{
     width: 100% !important;
 }
-
+.view-id-curriculum_directory .curriculum-content .views-row:nth-child(2n){
+    background: none;
+}
+.view-id-curriculum_directory .curriculum-content .views-row:nth-child(2n+1){
+    background: #ccc;
+}
 .view-display-id-attachment_3 .curriculum-content .views-row{
     background: none !important;
 }
+
+
 
 /* Download Links*/
 
@@ -193,7 +200,7 @@ h4.ccg{
 
 /* Carousel/Main Header Image */
 
-#carousel .page .background .background-fade {
+.path-frontpage #carousel .page .background .background-fade {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -205,7 +212,7 @@ h4.ccg{
     background-image: url(/themes/custom/curriculum/images/carousel-bottom-gradient.png);
 }
 
-.carousel-caption {
+.path-frontpage .carousel-caption {
     background-color: rgba(0, 51, 102, 0.8);
     bottom: 450px;
     max-width: 550px;
@@ -248,11 +255,14 @@ h4.ccg{
 
 /* Main wrapper homepage */
 
-
-#main-wrapper {
+.path-frontpage #main-wrapper{
     background: #fff;
     background-image: url("/themes/custom/curriculum/images/banners/frontpage-classrom-students.jpg");
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;    
+}
+
+#main-wrapper {
+    background-image : none;
 }
 
 
@@ -298,3 +308,8 @@ h4.ccg{
     pointer-events: none;
     color: #aaa;
 }*/
+
+.views-element-container{
+    padding: 0px !important;
+
+}
