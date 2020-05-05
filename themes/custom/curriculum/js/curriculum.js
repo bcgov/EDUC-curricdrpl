@@ -27,4 +27,12 @@ $(document).ready(function(){
     $('.curriculum_content .view-grouping-content').prepend('<div class="curriculum-stem">' + $(".views-field-field-concept-content-stem .field-content").html() + '</div>');
     $(".views-field-field-concept-content-stem .field-content , .views-field-field-curricular-competency-stem .field-content").css("display", "none");
 
+    $('.dropdown-toggle').dropdown();
+    $('[data-toggle="popover"]').popover({
+    trigger: 'hover',
+            content: function() {
+                return $(".elaboration." +$(this).attr('class')).html();
+            } 
+    });
+
 });
