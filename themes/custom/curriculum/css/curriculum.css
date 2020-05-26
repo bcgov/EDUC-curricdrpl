@@ -127,13 +127,13 @@ h1.curriculum-title{
     line-height: 1.2;
     color: inherit;
 }
-.curriculum-content > .views-row{
+.view-curriculum-course-view .curriculum-content > .views-row{
     position: relative;
     padding-left: 30px;
     background: url(/themes/custom/curriculum/images/icons/c_and_c_bullet_black_75.png) no-repeat !important;
     margin-bottom: 10px;
 }
-.curriculum-content > .views-row.ccg_keyword_w_elaboration{
+.view-curriculum-course-view .curriculum-content > .views-row.ccg_keyword_w_elaboration{
     position: relative;
     padding-left: 0px !important;
     background: none !important;
@@ -180,10 +180,10 @@ h4.ccg{
     padding:10px;
 }
 .pdf_url, .docx_url, .web_url{
-    width: 25%;
     text-align: center;
     float: right;
     margin: 5px 0px;
+    padding-left: 5px;
 
 
 }
@@ -191,7 +191,7 @@ h4.ccg{
 .view-id-curriculum_directory .curriculum-content > div:nth-child(2n){
     background-color: #e2edf8 !important;
 }
-.curriculum-content > div:nth-child(2n+1){
+.view-id-curriculum_directory .curriculum-content > div:nth-child(2n+1){
     background-color: #cde0f3 !important;
 }
 /* Curriculum Mega Menu*/
@@ -315,11 +315,5 @@ h4.ccg{
 
 .views-element-container{
     padding: 0px !important;
-
-}
-
-/* Subject Landing Page */
-#subject_landing_get_started div{
-    float:left;
 
 }
