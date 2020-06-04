@@ -106,6 +106,9 @@ h1.curriculum-title{
     display: none;
 }
 /* Big Ideas*/
+.curriculum_big_ideas .ccg{
+    display: none;
+}
 .curriculum_big_ideas .curriculum-content{
     display:flex;
     width:100%;
@@ -116,6 +119,7 @@ h1.curriculum-title{
     background: none !important;
     border: 1px solid #ccc;
     border-radius: 0.25em;
+    text-align:center;
 }
 /* Content */
 .view-grouping-header{
@@ -140,7 +144,9 @@ h1.curriculum-title{
 }
 
 /* Curricular Competencies */
-
+h4.ccg.no-ccg{
+    display: none;
+}
 h4.ccg{
     padding: 25px 0px
 }
