@@ -2,12 +2,16 @@ $(document).ready(function(){
 
     $("html:lang(fr) :lang(en)").hide();
     $("html:lang(en) :lang(fr)").hide();
-
-    $('.view-display-id-curriculum_course > .view-content .view-grouping:nth-child(1)').addClass("col-12 curriculum_big_ideas");
-    $('.view-display-id-curriculum_course > .view-content .view-grouping:nth-child(1) .curriculum-content').addClass("row");
-    $('.view-display-id-curriculum_course > .view-content .view-grouping:nth-child(2)').addClass("col-12 col-md-5 curriculum_content");
-    $('.view-display-id-curriculum_course > .view-content .view-grouping:nth-child(3)').addClass("col-12 col-md-7 curriculum_competencies");
-    
+    if($('.view-display-id-curriculum_course > .view-content .view-grouping').length == 3 ){
+        $('.view-display-id-curriculum_course > .view-content .view-grouping:nth-child(1)').addClass("col-12 curriculum_big_ideas");
+        $('.view-display-id-curriculum_course > .view-content .view-grouping:nth-child(1) .curriculum-content').addClass("row");
+        $('.view-display-id-curriculum_course > .view-content .view-grouping:nth-child(2)').addClass("col-12 col-md-5 curriculum_content");
+        $('.view-display-id-curriculum_course > .view-content .view-grouping:nth-child(3)').addClass("col-12 col-md-7 curriculum_competencies");
+    }else{
+        $('.view-display-id-curriculum_course > .view-content .view-grouping:nth-child(1)').addClass("col-12 curriculum_big_ideas");
+        $('.view-display-id-curriculum_course > .view-content .view-grouping:nth-child(1) .curriculum-content').addClass("row");
+        $('<div class="view-grouping col-12 col-md-5 curriculum_content"><div class="view-grouping-header">Content</div><div class="view-grouping-content"></div></div>').insertBefore($('.view-display-id-curriculum_course > .view-content .view-grouping:nth-child(2)').addClass("col-12 col-md-7 curriculum_competencies"));
+    }
 
     /* curricular Competency Group as an elaboration */
 
@@ -34,5 +38,21 @@ $(document).ready(function(){
                 return $(".elaboration." +$(this).attr('class')).html();
             } 
     });
+    $('[data-toggle="popover"]').click(function(){
+        $(this).next().slideToggle();
+        return false; //disable the scroll to top
+    });
+
+
+   /* Elaborations Expand*/
+
+    
+
+
+    /* Competency illustrations */
+    var count = $(".field--name-field-profiles > div > .field__items  > .field__item").length;
+    $(".field--name-field-profiles  > div > .field__items").addClass("count-" + count);
+
+ 
 
 });

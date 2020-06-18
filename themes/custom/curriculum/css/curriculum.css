@@ -30,7 +30,10 @@
 .views-field-field-grade-picker{
     text-align:center;
 }
+.curriculum_content .view-grouping-content{
+    background: aliceblue !important;
 
+}
 .curriculum_competencies .view-grouping-content, .curriculum_content .view-grouping-content{
     border: 1px solid #ccc;
 }
@@ -78,13 +81,14 @@
 .view-curriculum-course-view .dropdown-menu{
     float:left;
     width: 92%;
-
+    width: 220px;
 }
 .view-curriculum-course-view .dropdown-menu a{
     width: 100%;
     float:left;
     padding:10px;
     border-bottom: 1px solid #ccc;
+    width: 220px;
     
 }
 
@@ -116,7 +120,7 @@ h1.curriculum-title{
 .view-curriculum-course-view .curriculum_big_ideas .curriculum-content > .views-row{
     width:25%;
     padding:20px;
-    background: none !important;
+    background: aliceblue !important;
     border: 1px solid #ccc;
     border-radius: 0.25em;
     text-align:center;
@@ -322,4 +326,79 @@ h4.ccg{
 .views-element-container{
     padding: 0px !important;
 
+}
+
+
+/* Competency Illustration profiles*/
+.field--name-field-profiles > .field__label{
+    font-size: 1.54912rem;
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+/* Core Competencies */
+
+.core-competency-highlight{
+    background-color: red;
+}
+.field--name-field-profiles  > div > .field__items.count-2 > .field__item,
+.field--name-field-profiles  > div > .field__items.count-4 > .field__item{
+    max-width: 50% !important;
+    float: left !important;
+}
+.field--name-field-profiles  > div > .field__items.count-3 > .field__item,
+.field--name-field-profiles  > div > .field__items.count-5 > .field__item,
+.field--name-field-profiles  > div > .field__items.count-6 > .field__item{
+    max-width: 33% !important;
+    float: left !important;
+}
+.field--name-field-profile-numv{
+border-bottom: 1px solid #ccc;
+
+}
+.field--name-field-profile-numv::before{
+    content: "PROFILE ";
+
+}
+.field--name-field-competencies{
+    font-size: 1.55em;
+    line-height: 1.1em;
+    margin: .75em 0;
+}
+
+.node--type-illustration img{
+    padding: 5px; 
+    
+
+}
+.node--type-illustration img.image-illustration-square-image{
+    width: 200px;
+    height: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+
+.view-instructional-samples .field--name-body,
+.view-instructional-samples .field--type-file,
+.view-instructional-samples .video-embed-field-responsive-video{
+    width: 60%;
+    float: left;
+    padding-right:20px;
+
+}
+
+.view-instructional-samples .views-row{
+    border-bottom: 1px solid #ccc;
+    padding:20px 0px !important;
+}
+
+.elaboration{
+    text-transform:capitalize;
+}
+
+/* Explore Curriculum */
+.view-id-explore_curriculum .views-field-nothing-2 tr{
+    text-transform: capitalize;
 }
