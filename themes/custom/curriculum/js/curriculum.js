@@ -1,10 +1,11 @@
+
 $(document).ready(function(){
 
     $("html:lang(fr) :lang(en)").hide();
     $("html:lang(en) :lang(fr)").hide();
     if($('.view-display-id-curriculum_course > .view-content .view-grouping').length == 3 ){
         $('.view-display-id-curriculum_course > .view-content .view-grouping:nth-child(1)').addClass("col-12 curriculum_big_ideas");
-        $('.view-display-id-curriculum_course > .view-content .view-grouping:nth-child(1) .curriculum-content').addClass("row");
+        $('.view-display-id-curriculum_course > .view-content .view-grouping:nth-child(1) .curriculum-content').addClass("row mx-0").parent().addClass("mx-0 px-0");
         $('.view-display-id-curriculum_course > .view-content .view-grouping:nth-child(2)').addClass("col-12 col-md-5 curriculum_content");
         $('.view-display-id-curriculum_course > .view-content .view-grouping:nth-child(3)').addClass("col-12 col-md-7 curriculum_competencies");
     }else{
@@ -46,8 +47,33 @@ $(document).ready(function(){
 
    /* Elaborations Expand*/
 
-    
+   $(".view-grouping.curriculum_content .view-grouping-header").append('<div class="description">Students will build specific competencies based on this course</div>'); 
+   //$(".view-grouping.curriculum_content .view-grouping-header").append('<button class="btn btn-info toggle-description">?</button><div class="description">Students will build specific competencies based on this course</div>'); 
+   $(".view-grouping.curriculum_content").prepend('<button class="btn btn-info toggle-elaborations">Elaborations +</button>');
+   $(".view-grouping.curriculum_competencies .view-grouping-header").append('<div class="description">A student will learn this content in this course</div>'); 
+   //$(".view-grouping.curriculum_competencies .view-grouping-header").append('<button class="btn btn-info toggle-description">?</button><div class="description">A student will learn this content in this course</div>'); 
+    $(".view-grouping.curriculum_competencies").prepend('<button class="btn btn-info toggle-elaborations">Elaborations +</button>');
 
+    $(".curriculum_content .toggle-elaborations").click(function(){
+        if($(this).hasClass("active")){
+            $(this).removeClass("active").html("Elaborations +") 
+        }else{
+            $(this).addClass("active").html("Elaborations -")  
+        }
+        $(".curriculum_content .elaboration").slideToggle();
+    });
+    $(".curriculum_competencies .toggle-elaborations").click(function(){
+        if($(this).hasClass("active")){
+            $(this).removeClass("active").html("Elaborations +") 
+        }else{
+            $(this).addClass("active").html("Elaborations -") 
+        }        
+        $(".curriculum_competencies .elaboration").slideToggle();
+    });   
+        /*$(".toggle-description").click(function(){
+           $(this).next().slideToggle();
+        })*/
+    
 
     /* Competency illustrations */
     var count = $(".field--name-field-profiles > div > .field__items  > .field__item").length;

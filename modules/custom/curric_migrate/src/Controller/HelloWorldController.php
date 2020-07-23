@@ -3,7 +3,15 @@
 namespace Drupal\hello_world\Controller;
 
 class HelloWorldController {
-    
+    public function HelloWorldController_update_8001() {
+        /** @var \Drupal\Core\KeyValueStore\KeyValueFactoryInterface $key_value_factory */
+        $key_value_factory = \Drupal::service('keyvalue');
+        $field_map_kv_store = $key_value_factory->get('entity.definitions.bundle_field_map');
+        $node_map = $field_map_kv_store->get('node');
+        // Remove the field_dates field from the bundle field map for the page bundle.
+        unset($node_map['field_dates']['bundles']['page']);
+        $field_map_kv_store->set('node', $node_map);
+      }
     public function hello() {
 
         /*
