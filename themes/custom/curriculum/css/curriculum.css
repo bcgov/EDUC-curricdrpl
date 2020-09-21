@@ -30,6 +30,10 @@
 .views-field-field-grade-picker{
     text-align:center;
 }
+.curriculum_content .view-grouping-content{
+    background: aliceblue !important;
+
+}
 
 .curriculum_competencies .view-grouping-content, .curriculum_content .view-grouping-content{
     border: 1px solid #ccc;
@@ -46,27 +50,54 @@
 .view-display-id-attachment_3 .view-grouping{
     width: 100% !important;
 }
-
+.view-id-curriculum_directory .curriculum-content .views-row:nth-child(2n){
+    background: none;
+}
+.view-id-curriculum_directory .curriculum-content .views-row:nth-child(2n+1){
+    background: #ccc;
+}
 .view-display-id-attachment_3 .curriculum-content .views-row{
     background: none !important;
 }
 
+
+.view-curriculum-directory .view-grouping-content > .col-12 {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+.view-curriculum-directory .view-grouping.col-12{
+    padding: 15px !important;
+    margin: 0px !important;
+}
+
+view-grouping col-12
 /* Download Links*/
 
+.grade-changer .dropdown-menu a{
+    width: auto !important;
+    float: none !important;
+    border-bottom: none !important;
+    height: 20px !important;
+}
+
+.grade-changer .dropdown-item{
+    display:inline !important;    
+}
 .downloads{
-    float:right;
+    position:absolute !important; 
+    right: 0;
 
 }
 .view-curriculum-course-view .dropdown-menu{
     float:left;
-    width: 200px;
-
+    width: 92%;
 }
 .view-curriculum-course-view .dropdown-menu a{
-    width: 200px;
+    width: 100%;
     float:left;
     padding:10px;
     border-bottom: 1px solid #ccc;
+    
 }
 
 /* Curriculum  Title*/
@@ -78,18 +109,20 @@
 .view-display-id-attachment_1 .view-grouping{ 
     width: 100% !important;
 }
+.view-display-id-attachment_1
 h1.curriculum-title{
     text-align: left;
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
-}
-.course-links{
-
+    margin-top:-1em;
 }
 .curriculum-content > .views-row .elaboration{
     display: none;
 }
 /* Big Ideas*/
+.curriculum_big_ideas .ccg{
+    display: none;
+}
 .curriculum_big_ideas .curriculum-content{
     display:flex;
     width:100%;
@@ -97,9 +130,10 @@ h1.curriculum-title{
 .view-curriculum-course-view .curriculum_big_ideas .curriculum-content > .views-row{
     width:25%;
     padding:20px;
-    background: none !important;
+    background: aliceblue !important;
     border: 1px solid #ccc;
-    border-radius 0.25em;
+    border-radius: 0.25em;
+    text-align:center;
 }
 /* Content */
 .view-grouping-header{
@@ -111,13 +145,13 @@ h1.curriculum-title{
     line-height: 1.2;
     color: inherit;
 }
-.curriculum-content > .views-row{
+.view-curriculum-course-view .curriculum-content > .views-row{
     position: relative;
     padding-left: 30px;
     background: url(/themes/custom/curriculum/images/icons/c_and_c_bullet_black_75.png) no-repeat !important;
     margin-bottom: 10px;
 }
-.curriculum-content > .views-row.ccg_keyword_w_elaboration{
+.view-curriculum-course-view .curriculum-content > .views-row.ccg_keyword_w_elaboration{
     position: relative;
     padding-left: 0px !important;
     background: none !important;
@@ -125,6 +159,16 @@ h1.curriculum-title{
 
 /* Curricular Competencies */
 
+.view-curriculum-course-view .curriculum-content > .views-row{
+    position: relative;
+    padding-left: 30px;
+    background: url(/themes/custom/curriculum/images/icons/c_and_c_bullet_black_75.png) no-repeat !important;
+    margin-bottom: 10px;
+}
+
+h4.ccg.no-ccg{
+    display: none;
+}
 h4.ccg{
     padding: 25px 0px
 }
@@ -155,13 +199,33 @@ h4.ccg{
 }
 
 /* course Directory*/
+.course-links .nav-link{
+    padding-left: 0px !important;
+}
 
-
-.pdf_url, .docx_url{
-    padding-left: 10px;
+.course-downloads{
+    text-align:right;
+    
+}
+.course-title{
+    padding:10px;
+}
+.pdf_url, .docx_url, .web_url{
+    text-align: center;
     float: right;
+    margin: 5px 0px;
+    padding-left: 5px;
+
 
 }
+
+.view-id-curriculum_directory .curriculum-content > div:nth-child(2n){
+    background-color: #e2edf8 !important;
+}
+.view-id-curriculum_directory .curriculum-content > div:nth-child(2n+1){
+    background-color: #cde0f3 !important;
+}
+
 
 /* Curriculum Mega Menu*/
 
@@ -177,7 +241,7 @@ h4.ccg{
 
 /* Carousel/Main Header Image */
 
-#carousel .page .background .background-fade {
+.path-frontpage #carousel .page .background .background-fade {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -189,7 +253,7 @@ h4.ccg{
     background-image: url(/themes/custom/curriculum/images/carousel-bottom-gradient.png);
 }
 
-.carousel-caption {
+.path-frontpage .carousel-caption {
     background-color: rgba(0, 51, 102, 0.8);
     bottom: 450px;
     max-width: 550px;
@@ -199,9 +263,249 @@ h4.ccg{
     text-align:left;
 }
 
+/* Core Competencies */
+.competency-links .communication{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.competency-links .thinking{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.competency-links .personal-and-social{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.competency-links .communication a{
+    border-left: 10px solid orange;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.competency-links .thinking a{
+    
+    border-left: 10px solid blue;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin:0px 5px;
+}
+.competency-links .personal-and-social a{
+    border-left: 10px solid green;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.competency-links .communication a:hover{
+    background: orange !important;
+}
+.competency-links .thinking a:hover{
+    background: blue !important;
+}
+.competency-links .personal-and-social a:hover{
+    background: green !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background: white !important;
+    color: #666;
+}
+/* Main Navigation */
+.nav-brand{
+    width: 100%;
+}
+
 @media (min-width: 576px){
     .container{
         width: 100% !important;
     }
 
 }
+
+/* Main wrapper homepage */
+
+.homepage-feature {
+    background: #fff;
+    background-image: url("/themes/custom/curriculum/images/banners/frontpage-classrom-students.jpg");
+    background-repeat: no-repeat;    
+}
+
+#main-wrapper {
+    background-image : none;
+}
+
+
+/* Home page search block */
+
+.home-search-block{
+    min-height: 350px;
+    width: 100%;
+}
+
+.home-search-block h2 {
+    color: #fff;
+}
+
+.has-search {
+    background: rgba(0, 51, 102, 0.5);
+    border-radius: 3px 0 0 3px;
+    margin:15px 0;
+    padding: 25px;
+    width: 100%;
+
+}
+
+
+.has-search .form-control {
+
+    width: 90%;
+    
+}
+  
+/*.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}*/
+
+#block-curriculum-curriculum-system-main .views-element-container{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+
+}
+
+
+/* Competency Illustration profiles*/
+.field--name-field-profiles > .field__label{
+    font-size: 1.54912rem;
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+/* Core Competencies */
+
+.core-competency-highlight{
+    background-color: red;
+}
+.field--name-field-profiles  > div > .field__items.count-2 > .field__item,
+.field--name-field-profiles  > div > .field__items.count-4 > .field__item{
+    max-width: 50% !important;
+    float: left !important;
+}
+.field--name-field-profiles  > div > .field__items.count-3 > .field__item,
+.field--name-field-profiles  > div > .field__items.count-5 > .field__item,
+.field--name-field-profiles  > div > .field__items.count-6 > .field__item{
+    max-width: 33% !important;
+    float: left !important;
+}
+.field--name-field-profile-numv{
+border-bottom: 1px solid #ccc;
+
+}
+.field--name-field-profile-numv::before{
+    content: "PROFILE ";
+
+}
+.field--name-field-competencies{
+    font-size: 1.55em;
+    line-height: 1.1em;
+    margin: .75em 0;
+}
+
+.node--type-illustration img{
+    padding: 5px; 
+    
+
+}
+.node--type-illustration img.image-illustration-square-image{
+    width: 200px;
+    height: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+
+.view-instructional-samples .field--name-body,
+.view-instructional-samples .field--type-file,
+.view-instructional-samples .video-embed-field-responsive-video{
+    width: 60%;
+    float: left;
+    padding-right:20px;
+
+}
+
+.view-instructional-samples .views-row{
+    border-bottom: 1px solid #ccc;
+    padding:20px 0px !important;
+}
+
+.elaboration{
+    text-transform:capitalize;
+}
+
+/* Explore Curriculum */
+.view-id-explore_curriculum .views-field-nothing-2 tr{
+    text-transform: capitalize;
+}
+/* Elaborations */
+
+.toggle-elaborations{
+    float:right;
+}
+
+.description{
+    font-size:12px;
+
+}
+
+.quicktabs-tabs.list-group{
+    flex-direction: row !important;
+    margin: 0px !important;
+}
+.quicktabs-tabs.list-group li{
+    padding: 10px;
+    border-bottom: none;
+}
+.quicktabs-main{
+    border: 1px solid #ccc;
+    margin: 0px !important;
+    padding: 20px 15px;
+}
+.quicktabs-wrapper{
+    padding: 0px !important;
+
+}
+.list-group-item a{
+    text-decoration: none;
+    border-radius: none;
+}
+.active.list-group-item a{
+    color: white;
+}
+.list-group-item:first-child{
+    border-top-right-radius: 0;
+
+}
+.list-group-item:last-child{
+    border-top-right-radius: 0.25em;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    
+}
+
+/* Subject landing page */
+
+.subject-landing-page-10-12 .view-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.subject-landing-page-10-12 .view-grouping:nth-of-type(2) { order: 1; }
+  
+  

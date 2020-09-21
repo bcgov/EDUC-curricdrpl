@@ -32,4 +32,17 @@ function curriculum_system_theme_settings_alter(&$form, FormStateInterface $form
       'bg-white' => t('White'),
       'bg-transparent' => t('Transparent'),
   );
+  $form['fonts']['icons']['bootstrap_barrio_icons']['#options']['fontawesome_5'] = 'Font Awesome 5';
+}
+
+function curriculum_preprocess_page(&$variables)
+{
+  $icons = theme_get_setting('bootstrap_barrio_icons');
+  if ($icons) {
+    $variables['#attached']['library'][] = ( $icons == 'fontawesome_5' ? 'YOURTHEME' : 'bootstrap_barrio' ) . '/' . $icons;
+  }
+}
+function curriculum_preprocess(&$variables){
+  $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $variables['language'] = $language;
 }
