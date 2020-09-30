@@ -28,7 +28,7 @@
 <div class="col-12">
 {% endif %}
 {% if title %}
-  <h3 class="ccg {{ title|render|striptags|trim|replace(" ","-")|lower|default('no-ccg') }}">{{ title|render|striptags|trim }}</h3>
+  <h4 class="ccg {{ title|render|striptags|trim|replace(" ","-")|lower|default('no-ccg') }}">{{ title|render|striptags|trim }}</h4>
 {% endif %}
 <div class="curriculum-content d-print-block">
 {% for row in rows %}

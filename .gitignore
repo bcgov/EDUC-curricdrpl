@@ -43,3 +43,6 @@ web.config
 .gitattributes
 LICENSE.txt
 composer.lock
+
+#Blocking files from
+themes/code for views
