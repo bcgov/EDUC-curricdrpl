@@ -590,5 +590,59 @@ h4.ccg.no-ccg {
   margin-top: 20px;
 }
 
+#edit-field-grade-range-value {
+  float: left;
+  width: 100px
+}
 
-/**** BC GOV Styles ***/
+#edit-field-grade-range-value--wrapper {
+  float: left;
+  width: 300px;
+}
+
+#edit-field-grade-range-value .form-check {
+  float: left;
+  width: 50%;
+
+}
+
+#edit-field-subject-range-value {
+  width: 550px;
+  float: left
+}
+
+#edit-field-subject-range-value .form-check {
+  position: relative;
+  display: block;
+  padding-left: 1.25rem;
+  float: left;
+  width: 250px;
+}
+
+#block-curriculum-curriculum-block-22 {
+  display: none;
+
+}
+
+.form-item-type-curricular-competency {
+  width: 150px;
+}
+
+#views-exposed-form-explore-curriculum-page-1 div.form-row>fieldset {
+  border: 1px solid #ccc;
+  margin: 5px;
+  padding: 15px;
+}
+
+legend {
+  float: left;
+}
+
+#edit-actions {
+  width: 100%;
+}
+
+#form-item-combine {
+  width: 100%;
+  float: left;
+}
