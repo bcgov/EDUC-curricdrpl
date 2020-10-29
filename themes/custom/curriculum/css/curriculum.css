@@ -86,6 +86,8 @@
 .curriculum_competencies .view-grouping-content,
 .curriculum_content .view-grouping-content {
   border: 1px solid #ccc;
+  border-radius: 0.25em;
+  margin-top: 20px;
 }
 
 .view-display-id-attachment_2,
@@ -150,10 +152,10 @@ view-grouping col-12
   width: 92%;
 }
 
-.view-curriculum-course-view .dropdown-menu a {
+/*.view-curriculum-course-view .dropdown-menu a {
   width: 400px;
   padding: 10px;
-}
+}*/
 
 /* Curriculum  Title*/
 
@@ -166,13 +168,49 @@ view-grouping col-12
   width: 100% !important;
 }
 
+/* HEADINGS */
+
+h1, h2, h3, h4, h5 {
+  color: #313132;
+  font-weight: 600;
+  line-height: 1.2em;
+  margin-bottom: 0.5em;
+
+}
+
 h1 {
+  font-size: 2.074em;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.728em;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1.44em;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+h4 {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+
+
+/*h1 {
   text-align: left;
   padding-top: 10px;
   border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
   margin-top: -1em;
-}
+}*/
 
 .curriculum-content>.views-row .elaboration {
   display: none;
@@ -198,13 +236,12 @@ h1 {
 
 /* Content */
 .view-grouping-header {
-  font-size: 2rem;
+  color: #313132;
+  font-size: 1.728em;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 0.5em;
   margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.2;
-  color: inherit;
 }
 
 .view-curriculum-course-view .curriculum-content>.views-row {
@@ -528,7 +565,10 @@ h4.ccg.no-ccg {
 }
 
 .description {
-  font-size: 12px;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.6;
+  color: #313132;
 }
 
 .quicktabs-tabs.list-group {
