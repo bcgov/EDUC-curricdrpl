@@ -93,9 +93,12 @@
 }
 
 .view-grouping.curriculum_content,
-.view-grouping.curriculum_competencies,
-.view-grouping.curriculum_big_ideas {
+.view-grouping.curriculum_competencies {
   padding-top: 15px;
+}
+
+.view-grouping.curriculum_big_ideas {
+  margin-bottom: 15px;
 }
 
 .view-display-id-attachment_3 .view-grouping {
@@ -164,13 +167,34 @@ view-grouping col-12
   width: 100% !important;
 }
 
-h1 {
-  text-align: left;
-  padding-top: 10px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
-  margin-top: -1em;
+h1, h2, h3, h4, h5 {
+  color: #313132;
+  font-weight: 600;
+  line-height: 1.2em;
 }
+
+h1 {
+  font-size: 2.074em;
+  margin-bottom: 0.57em;
+}
+
+h2 {
+  font-size: 1.728em;
+  margin-bottom: 0.43em;
+}
+
+h3 {
+  font-size: 1.44em;
+  margin-top: 1em;
+  margin-bottom: 0.43em;
+}
+
+h4{
+  font-size: 1.2em;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+}
+
 
 .curriculum-content > .views-row .elaboration {
   display: none;
