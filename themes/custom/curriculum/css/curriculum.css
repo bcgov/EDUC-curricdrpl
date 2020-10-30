@@ -83,6 +83,7 @@
 .curriculum_competencies .view-grouping-content,
 .curriculum_content .view-grouping-content {
   border: 1px solid #ccc;
+  border-radius: 0.25em;
 }
 
 .view-display-id-attachment_2,
