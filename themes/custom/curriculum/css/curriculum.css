@@ -147,15 +147,19 @@ view-grouping col-12
   right: 0;
 }
 
-.view-curriculum-course-view .dropdown-menu {
+/*.view-curriculum-course-view .dropdown-menu {
   float: left;
   width: 92%;
-}
+}*/
 
 /*.view-curriculum-course-view .dropdown-menu a {
   width: 400px;
   padding: 10px;
 }*/
+
+.grade-changer .dropdown-menu li.d-inline {
+  padding: 0 5px 0 5px;
+}
 
 /* Curriculum  Title*/
 
@@ -688,4 +692,28 @@ legend {
 #form-item-combine {
   width: 100%;
   float: left;
+}
+
+
+/* CUSTOM BUTTON STYLES */
+/* Communication */
+.btn-communication {
+  color: #313132;
+  background-color: #fff;
+  border-color: #f58855;
+  border-left-width: 15px;
+}
+
+.btn-thinking {
+  color: #313132;
+  background-color: #fff;
+  border-color: #009ada;
+  border-left-width: 15px;
+}
+
+.btn-personal {
+  color: #313132;
+  background-color: #fff;
+  border-color: #4fb76e;
+  border-left-width: 15px;
 }
