@@ -669,3 +669,27 @@ legend {
 .competency-themes .list-group {
   display: block;
 }
+
+.btn-communication {
+  color: #313132;
+  background-color: #fff;
+  border-color: #f58855;
+  border-left-width: 15px;
+}
+
+.btn-thinking {
+  color: #313132;
+  background-color: #fff;
+  border-color: #009ada;
+  border-left-width: 15px;
+
+}
+
+.btn-personal {
+  color: #313132;
+  background-color: #fff;
+  border-color: #4fb76e;  
+  border-left-width: 15px;
+
+
+}
