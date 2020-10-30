@@ -144,13 +144,13 @@ view-grouping col-12
 
 .view-curriculum-course-view .dropdown-menu {
   float: left;
-  width: 92%;
+  /*width: 92%;*/
 }
-
+/*
 .view-curriculum-course-view .dropdown-menu a {
   width: 400px;
   padding: 10px;
-}
+}*/
 
 /* Curriculum  Title*/
 
