@@ -1,3 +1,6 @@
+
+
+
 /* Remove in production*/
 
 .temp-keyword {
@@ -83,6 +86,8 @@
 .curriculum_competencies .view-grouping-content,
 .curriculum_content .view-grouping-content {
   border: 1px solid #ccc;
+  border-radius: 0.25em;
+  margin-top: 20px;
 }
 
 .view-display-id-attachment_2,
@@ -150,6 +155,10 @@ view-grouping col-12
 .view-curriculum-course-view .dropdown-menu a {
   width: 400px;
   padding: 10px;
+}*/
+
+.grade-changer .dropdown-menu li.d-inline {
+  padding: 0 5px 0 5px;
 }
 
 /* Curriculum  Title*/
@@ -163,7 +172,43 @@ view-grouping col-12
   width: 100% !important;
 }
 
+/* HEADINGS */
+
+h1, h2, h3, h4, h5 {
+  color: #313132;
+  font-weight: 600;
+  line-height: 1.2em;
+  margin-bottom: 0.5em;
+
+}
+
 h1 {
+  font-size: 2.074em;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.728em;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1.44em;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+h4 {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+
+
+/*h1 {
   text-align: left;
   padding-top: 10px;
   border-bottom: 1px solid #ccc;
@@ -642,22 +687,31 @@ legend {
   width: 100%;
 }
 
-.form-item-combine {
-  width: 100% !important;
-  float: left !important;
-  background: #e2e2e2;
-}
-
-.competency-themes .paragraph--type--profiles {
-  padding: 10px;
-  width: 25%;
+#form-item-combine {
+  width: 100%;
   float: left;
 }
 
-.competency-themes .paragraph--type--profile .field--name-name {
-  font-size: 1rem !important;
+
+/* CUSTOM BUTTON STYLES */
+/* Communication */
+.btn-communication {
+  color: #313132;
+  background-color: #fff;
+  border-color: #f58855;
+  border-left-width: 15px;
 }
 
-.illustration-search-item h2 a {
-  font-size: 1em !important;
+.btn-thinking {
+  color: #313132;
+  background-color: #fff;
+  border-color: #009ada;
+  border-left-width: 15px;
+}
+
+.btn-personal {
+  color: #313132;
+  background-color: #fff;
+  border-color: #4fb76e;
+  border-left-width: 15px;
 }
