@@ -430,9 +430,36 @@ h4.ccg.no-ccg {
 
 /* Main wrapper homepage */
 
+.home-search-box{
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 0.25em;
+}
+
+.search-btn {
+  background-color: #003366;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  position: relative;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+  transition: all .2s ease-out, color .2s ease-out;
+
+}
+
+
+
 .homepage-feature {
   background: #fff;
-  background-image: url("/sites/curriculum.gov.bc.ca/themes/custom/curriculum/images/banners/frontpage-classrom-students.jpg");
+  background-image: url("/sites/curriculum.gov.bc.ca/themes/custom/curriculum/images/banners/frontpage-classroom-gardening.jpg");
   background-repeat: no-repeat;
 }
 
@@ -448,7 +475,7 @@ h4.ccg.no-ccg {
 }
 
 .home-search-block h2 {
-  color: #fff;
+  
 }
 
 .has-search {
