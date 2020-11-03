@@ -538,16 +538,15 @@ h4.ccg.no-ccg {
   border-bottom: 1px solid #ccc;
 }
 
-.field--name-field-profile-numv::before {
-  content: "PROFILE ";
-}
-
 .field--name-field-competencies {
   font-size: 1.55em;
   line-height: 1.1em;
   margin: 0.75em 0;
 }
+.node--type-illustration h2{
+  font-size: 1em !important;
 
+}
 .node--type-illustration img {
   padding: 5px;
 }
@@ -654,6 +653,10 @@ h4.ccg.no-ccg {
   width: 100px;
 }
 
+#edit-type--wrapper{
+  float:left;
+  width:200px
+}
 #edit-field-grade-range-value--wrapper {
   float: left;
   width: 300px;
@@ -671,7 +674,6 @@ h4.ccg.no-ccg {
 
 #edit-field-subject-range-value .form-check {
   position: relative;
-  display: block;
   padding-left: 1.25rem;
   float: left;
   width: 250px;
