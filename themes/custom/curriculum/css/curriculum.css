@@ -628,10 +628,7 @@ h4.ccg.no-ccg {
 
 #edit-type--wrapper{
   float:left;
-}
-#edit-type--wrapper .form-check{
-  display:initial;
-
+  width:200px
 }
 #edit-field-grade-range-value--wrapper {
   float: left;
