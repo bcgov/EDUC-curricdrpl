@@ -697,6 +697,9 @@ legend {
   display: block;
 }
 
+#views-exposed-form-competencies-search-page-1 .fieldset-wrapper{
+  float:left;
+}
 .btn-communication {
   color: #313132;
   background-color: #fff;
@@ -719,4 +722,10 @@ legend {
   border-left-width: 15px;
 
 
+}
+.view-curriculum-directory .view-header{
+  width: 200px;
+  position: absolute;
+  top: 15px;
+  left: 120px;
 }
