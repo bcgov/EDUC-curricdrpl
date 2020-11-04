@@ -459,9 +459,9 @@ h4.ccg.no-ccg {
 
 .homepage-feature {
   background: #fff;
-  background-image: url("/sites/curriculum.gov.bc.ca/themes/custom/curriculum/images/banners/frontpage-classroom-adst.jpg");
+  background-image: url("/sites/curriculum.gov.bc.ca/themes/custom/curriculum/images/banners/frontpage-classroom-kids.jpg");
   background-repeat: no-repeat;
-  background-position-x: -50px;
+  background-position-y: -250px;
   min-height: 500px;
 }
 
