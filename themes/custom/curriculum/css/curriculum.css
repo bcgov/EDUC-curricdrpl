@@ -758,3 +758,6 @@ legend {
   top: 15px;
   left: 120px;
 }
+.card .card-header{
+  margin-top: 0px;
+}
