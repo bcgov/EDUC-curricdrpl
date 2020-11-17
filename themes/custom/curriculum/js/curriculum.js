@@ -46,10 +46,10 @@ $(document).ready(function () {
 
   /* Elaborations Expand*/
 
-  $(".view-grouping.curriculum_content .view-grouping-header").append('<div class="description">Students will build specific competencies based on this course</div>');
+  //$(".view-grouping.curriculum_content .view-grouping-header").append('<div class="description">Students will build specific competencies based on this course</div>');
   //$(".view-grouping.curriculum_content .view-grouping-header").append('<button class="btn btn-info toggle-description">?</button><div class="description">Students will build specific competencies based on this course</div>'); 
   $(".view-grouping.curriculum_content").prepend('<button class="btn btn-info toggle-elaborations">Elaborations +</button>');
-  $(".view-grouping.curriculum_competencies .view-grouping-header").append('<div class="description">A student will learn this content in this course</div>');
+  //$(".view-grouping.curriculum_competencies .view-grouping-header").append('<div class="description">A student will learn this content in this course</div>');
   //$(".view-grouping.curriculum_competencies .view-grouping-header").append('<button class="btn btn-info toggle-description">?</button><div class="description">A student will learn this content in this course</div>'); 
   $(".view-grouping.curriculum_competencies").prepend('<button class="btn btn-info toggle-elaborations">Elaborations +</button>');
 
@@ -92,4 +92,4 @@ $(document).ready(function () {
 
 });
 
-$(".title").empty().remove();
+//(".title").empty().remove();

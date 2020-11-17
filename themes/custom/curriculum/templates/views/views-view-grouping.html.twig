@@ -15,6 +15,12 @@
  */
 #}
 <div class="view-grouping col-12">
-  <!--<div class="view-grouping-header">--><h2>{{ title }}</h2><!--</div>-->
+{% set group_title = title }
+  <h2 lang="en">{{ group_title }}</h2>
+  {% if "Grade" in group_title }
+  <h2 lang="fr">{{ title|replace({"Grade ":""}) ~ " année" }}</h2>
+  {% else %}
+  <h2 lang="fr">{{ group_title }}</h2>
+  {% endif %}
   <div class="view-grouping-content">{{ content }}</div>
 </div>
