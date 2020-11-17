@@ -84,7 +84,6 @@ $(document).ready(function () {
     } else {
       $('.grade-changer .dropdown-menu div').html($(".gradepicker-subject." + subject + " ul").html());
     }
-    $("h1.title").empty().remove();
   });
   
   
