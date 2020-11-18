@@ -788,13 +788,16 @@ legend {
 .view-curriculum-directory .view-header{
   width: 200px;
   position: absolute;
-  top: 15px;
   left: 120px;
   z-index: 10;
 }
 .card .card-header{
   margin-top: 0px;
 }
-.view-curriculum-directory .col-auto{
+.view-curriculum-directory .col-auto , .subject-landing-page-10-12 .col-auto{
   padding: 0px !important;
+  margin: 0px !important;
+}
+.view-curriculum-directory .row{
+  margin: 0px !important;
 }
