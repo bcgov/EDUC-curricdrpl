@@ -801,3 +801,11 @@ legend {
 .view-curriculum-directory .row{
   margin: 0px !important;
 }
+/* firefox fix */
+#block-curriculum-curriculum-system-main .view-id-curriculum_course_view .attachment-before .views-element-container{
+  width:100%;
+}
+#block-curriculum-curriculum-system-main .view-id-curriculum_course_view .attachment-before{
+  display:flex;
+}
+
