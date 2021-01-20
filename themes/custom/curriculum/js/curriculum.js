@@ -2,6 +2,10 @@ $(document).ready(function () {
   /* Hide french content on english page and visavesa*/
     $("html:lang(fr) :lang(en)").hide();
     $("html:lang(en) :lang(fr)").hide();
+    $("html:lang(fr) .path-instructional-samples :lang(en)").show();
+
+    
+    $("html:lang(en) .path-instructional-samples :lang(fr)").show();
   
     /* Course Content */
     if ($('.view-display-id-curriculum_course > .view-content .view-grouping').length == 3) {

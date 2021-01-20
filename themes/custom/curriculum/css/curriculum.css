@@ -809,3 +809,7 @@ legend {
   display:flex;
 }
 
+.path-instructional-samples .en{
+  display:block !important;
+}
+
