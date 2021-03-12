@@ -235,7 +235,7 @@ h4{
 .view-curriculum-course-view .curriculum-content > .views-row {
   position: relative;
   padding-left: 30px;
-  background: url(/sites/curriculum.gov.bc.ca/custom/curriculum/images/icons/c_and_c_bullet_black_75.png)
+  background: url(/sites/curriculum.gov.bc.ca/themes/custom/curriculum/images/icons/c_and_c_bullet_black_75.png)
     no-repeat !important;
   margin-bottom: 10px;
 }
@@ -253,7 +253,7 @@ h4{
 .view-curriculum-course-view .curriculum-content > .views-row {
   position: relative;
   padding-left: 30px;
-  background: url(/sites/curriculum.gov.bc.ca/custom/curriculum/images/icons/c_and_c_bullet_black_75.png)
+  background: url(/sites/curriculum.gov.bc.ca/themes/custom/curriculum/images/icons/c_and_c_bullet_black_75.png)
     no-repeat !important;
   margin-bottom: 10px;
 }
@@ -351,7 +351,7 @@ h4.ccg.no-ccg {
   background-size: contain;
   background-repeat: repeat-x;
   background-position: center bottom;
-  background-image: url(/sites/curriculum.gov.bc.ca/custom/curriculum/images/carousel-bottom-gradient.png);
+  background-image: url(/sites/curriculum.gov.bc.ca/themes/custom/curriculum/images/carousel-bottom-gradient.png);
 }
 
 .path-frontpage .carousel-caption {
@@ -735,7 +735,9 @@ legend {
 #edit-actions {
   width: 100%;
 }
-
+.path-instructional-samples #edit-actions{
+  width:auto !important;
+}
 .form-item-combine {
   width: 100% !important;
   float: left !important;
