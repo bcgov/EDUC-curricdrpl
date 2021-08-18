@@ -46,28 +46,30 @@
 
 /* Language Picker */
 
-.language-picker ul {
+.language-picker ul, .language-picker nav {
   font-size: 0.9rem;
   height: 30px;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  border-bottom: none !important;
 }
 
-.language-picker li {
+.language-picker li, .language-picker nav span {
   float: left;
   height: 30px;
   line-height: 30px;
+  padding: 0px !important;
 }
 
-.language-picker li a {
+.language-picker li a, .language-picker nav span a{
   display: block;
   padding: 0 10px;
   color: #ffffff;
   text-decoration: underline;
 }
 
-.language-picker li a:hover {
+.language-picker li a:hover, .language-picker nav span a:hover {
   text-decoration: underline;
 }
 
@@ -808,7 +810,7 @@ legend {
   width:100%;
 }
 #block-curriculum-curriculum-system-main .view-id-curriculum_course_view .attachment-before{
-  display:flex;
+
 }
 
 .path-instructional-samples .en{
